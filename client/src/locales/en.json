@@ -1,0 +1,171 @@
+{
+  "app": {
+    "select_language": "Select your language",
+    "title": "PlantDoctor",
+    "welcome": "Welcome to PlantDoctor",
+    "home": "Home",
+    "scan": "Scan",
+    "login": "Login/Signup",
+    "logout": "Logout",
+    "dashboard": "Dashboard",
+    "capture": "Capture",
+    "analyse": "Analyse",
+    "retake": "Retake",
+    "reupload": "Re-Upload",
+    "browse_or_drag": "Click to browse or drag & drop",
+    "supported_formats": "Supported formats: JPEG, PNG",
+    "tips_title": "Tips for best results:",
+    "tip1": "Take close-up photos of affected areas (leaves, stems, fruits).",
+    "tip2": "Ensure good lighting to capture accurate colors and details.",
+    "tip3": "Include both healthy and diseased parts for comparison.",
+    "tip4": "Hold the camera steady to avoid blurry images.",
+    "otp_sent_to": "OTP sent to",
+    "send_otp": "Send OTP",
+    "sending": "Sending...",
+    "verify_otp": "Verify OTP",
+    "verifying": "Verifying...",
+    "resend_otp": "Didn't receive OTP?",
+    "resend": "Resend",
+    "enter_phone": "Enter 10-digit mobile number",
+    "enter_otp": "Please enter a valid 6-digit OTP",
+    "error": "Error",
+    "verification_failed": "Verification failed",
+    "failed_to_send_otp": "Failed to send OTP",
+    "analysis_failed": "Analysis Failed",
+    "analysing_image": "Analyzing image...",
+    "analysing_leaf": "Analyzing leaf patterns...",
+    "results": "Analysis Results",
+    "diagnosis": "Diagnosis",
+    "confidence": "Confidence",
+    "remedies": "Remedies",
+    "treatment_plan": "Recommended Treatment Plan",
+    "cultural_practices": "Cultural Practices",
+    "chemical_control": "Chemical Control",
+    "nutrient_management": "Nutrient Management",
+    "preventive_measures": "Preventive Measures",
+    "healthy_plant_detected": "Healthy Plant Detected!",
+    "great_job": "🎉 Great job! Your plant is healthy. Maintain good practices!",
+    "severity_low": "Low Severity",
+    "severity_medium": "Medium Severity",
+    "severity_high": "High Severity",
+    "apply_every": "Apply every",
+    "dosage": "Dosage",
+    "frequency": "Frequency",
+    "nutrition": "Nutrition",
+    "share_results": "Share Results",
+    "mobile_friendly": "Mobile Friendly",
+    "accurate_detection": "Accurate Detection",
+    "treatment_guide": "Treatment Guide",
+    "get_results": "Get Results",
+    "take_photo": "Take a Photo",
+    "ai_analysis": "AI Analysis",
+    "get_diagnosis": "Receive diagnosis and treatment recommendations instantly.",
+    "identifies_diseases": "Identifies 50+ plant diseases with high accuracy.",
+    "detailed_treatment": "Get detailed treatment recommendations for each disease.",
+    "share_sms": "Share diagnosis results via SMS with friends or experts.",
+    "works_on_any_device": "Works on any device with a responsive design.",
+    "loading": "Loading...",
+    "user": "User",
+    "profile": "Profile",
+    "menu": "Menu"
+  },
+  "language": {
+          "english": "English",
+          "hindi": "हिन्दी",
+          "telugu": "తెలుగు",
+          "tamil": "தமிழ்",
+          "marathi": "मराठी",
+          "bengali": "বাংলা"
+        },
+  "disease": {
+    "0": {
+      "name": "Early Rust",
+      "description": "Initial stage of fungal infection characterized by orange pustules.",
+      "symptoms": "Small orange-brown pustules on leaves, yellow halos around lesions.",
+      "remedies": [
+        "Remove and destroy infected plant parts.",
+        "Improve air circulation through proper spacing.",
+        "Avoid overhead watering to reduce humidity."
+      ],
+      "pesticides": [
+        { "name": "Propiconazole", "dose": "0.25-0.5ml/L", "frequency": "Every 14 days" },
+        { "name": "Hexaconazole", "dose": "1-2ml/L", "frequency": "Every 21 days" }
+      ],
+      "fertilizers": ["Balanced NPK (10-10-10)", "Foliar spray of 0.5% ZnSO4 + 0.25% FeSO4"]
+    },
+    "1": {
+      "name": "Early Leaf Spot",
+      "description": "Fungal disease causing circular leaf spots.",
+      "symptoms": "Small brown spots with yellow halos, premature leaf drop.",
+      "remedies": [
+        "Crop rotation with non-host plants.",
+        "Use disease-free seeds.",
+        "Apply neem oil spray weekly."
+      ],
+      "pesticides": [
+        { "name": "Chlorothalonil", "dose": "2g/L", "frequency": "Every 10 days" },
+        { "name": "Mancozeb", "dose": "2.5g/L", "frequency": "Every 15 days" }
+      ],
+      "fertilizers": ["High potassium fertilizer (0-0-50)", "Organic compost tea every 2 weeks"]
+    },
+    "2": {
+      "name": "Healthy Plant",
+      "description": "Your plant shows no signs of disease.",
+      "remedies": [
+        "Maintain proper irrigation schedule.",
+        "Continue regular nutrient management.",
+        "Monitor weekly for early signs."
+      ],
+      "message": "🎉 Great job! Your plant is healthy. Maintain good practices!"
+    },
+    "3": {
+      "name": "Late Leaf Spot",
+      "description": "Severe fungal infection affecting photosynthesis.",
+      "symptoms": "Large dark brown spots, defoliation, stem lesions.",
+      "remedies": [
+        "Destroy crop residue after harvest.",
+        "Use resistant varieties like TAG-24.",
+        "Apply silicon-based fungicides."
+      ],
+      "pesticides": [
+        { "name": "Tebuconazole", "dose": "1ml/L", "frequency": "Every 7 days" },
+        { "name": "Difenoconazole", "dose": "0.5ml/L", "frequency": "Every 10 days" }
+      ],
+      "fertilizers": ["Extra potassium (0-0-60) application", "Foliar spray of 1% KNO3"]
+    },
+    "4": {
+      "name": "Nutrient Deficiency",
+      "description": "Imbalance in essential plant nutrients.",
+      "symptoms": "Stunted growth, chlorosis, leaf curling.",
+      "remedies": [
+        "Conduct soil testing.",
+        "Apply balanced micronutrient mix.",
+        "Use organic matter to improve soil health."
+      ],
+      "fertilizers": [
+        "NPK 12-32-16 for vegetative growth",
+        "Calcium nitrate (1g/L) foliar spray",
+        "Magnesium sulfate (2g/L) soil drench"
+      ]
+    },
+    "5": {
+      "name": "Rust",
+      "description": "Advanced fungal disease affecting yield.",
+      "symptoms": "Orange-red powdery pustules, severe defoliation.",
+      "remedies": [
+        "Immediate removal of infected plants.",
+        "Strict field sanitation measures.",
+        "Solarization of soil between crops."
+      ],
+      "pesticides": [
+        { "name": "Tridemorph", "dose": "1.5ml/L", "frequency": "Every 5 days" },
+        { "name": "Sulphur Dust", "dose": "25kg/ha", "frequency": "Weekly" }
+      ],
+      "fertilizers": [
+        "Reduce nitrogen application.",
+        "Increase potassium (0-0-50) dosage.",
+        "Apply humic acid (2ml/L)."
+      ]
+    }
+  }
+}

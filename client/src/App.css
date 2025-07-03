@@ -1,0 +1,66 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+div#root{
+  height: 100vh;
+}
+
+:root {
+  /* Primary (Healthy Greens) */
+  --leaf-dark: #2E7D32;
+  --leaf-primary: #4CAF50;
+  --leaf-light: #A5D6A7;
+  --leaf-pale: #E8F5E9;
+
+  /* Secondary (Earth Tones) */
+  --soil-dark: #5D4037;
+  --soil-medium: #8D6E63;
+  --soil-light: #D7CCC8;
+
+  /* Accent Colors */
+  --sun-bright: #FFB300;
+  --sun-pale: #FFECB3;
+  --water-medium: #29B6F6;
+  --water-light: #E1F5FE;
+
+  /* Status Colors */
+  --healthy: #00C853;
+  --low-severity: #FFB300;
+  --medium-severity: #FF9100;
+  --high-severity: #D50000;
+
+  /* Neutrals */
+  --neutral-dark: #37474F;
+  --neutral-medium: #78909C;
+  --neutral-light: #CFD8DC;
+  --neutral-pale: #ECEFF1;
+  --white: #FFFFFF;
+
+  /* Spacing System */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-xxl: 48px;
+
+  /* Shadows */
+  --shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.12);
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+
+  /* Transitions */
+  --transition-fast: 150ms ease-in-out;
+  --transition-medium: 250ms ease-in-out;
+  --transition-slow: 350ms ease-in-out;
+}
+

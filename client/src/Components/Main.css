@@ -1,0 +1,275 @@
+.hero-container {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #7bc67e50;
+  border-radius: 50px;
+  margin: 50px auto;
+  padding: 50px 20px;
+}
+
+.hero-content {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.text-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.main-heading {
+  font-size: 2.5rem;
+  color: #2d2d2d;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.subheading {
+  font-size: 1.25rem;
+  color: #666;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #45a049;
+}
+
+.icon-container {
+  flex: 0.5;
+  display: flex;
+  justify-content: center;
+  min-width: 300px;
+}
+
+.leaf-icon {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main-heading {
+    font-size: 2rem;
+  }
+
+  .subheading {
+    font-size: 1.1rem;
+  }
+}
+
+/* Header */
+.appbar {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  box-shadow: 0 2px 8px 0 rgba(60, 60, 60, 0.04);
+  z-index: 100;
+  width: 100%;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.5rem 1.5rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.leaf-logo {
+  display: inline-block;
+}
+
+.brand-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #0b7f26;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.nav-links a {
+  color: #007525;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  transition: background 0.2s;
+}
+
+.nav-links a:hover {
+  background: #62c562;
+  color: white;
+}
+
+.lang-btn {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  color: #4caf50;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.lang-btn:hover {
+  background: #e8f5e9;
+}
+
+.lang-icon {
+  margin-right: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 700px) {
+  .toolbar {
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .nav-links {
+    gap: 0.7rem;
+  }
+}
+/* Hamburger menu button */
+.menu-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 38px;
+  height: 38px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1101;
+}
+.menu-btn span {
+  display: inline;
+  height: 4px;
+  width: 100%;
+  background: #4caf50;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* Sidebar styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -260px;
+  width: 220px;
+  height: 100vh;
+  background: #fff;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.2rem 1rem 1.2rem;
+  gap: 1.5rem;
+  z-index: 1102;
+  transition: right 0.3s;
+}
+.sidebar.open {
+  right: 0;
+}
+.sidebar .sidebar-brand{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.sidebar a {
+  color: #0b7f26;
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 4px;
+  padding: 0.5rem 0.8rem;
+  transition: background 0.2s;
+}
+.sidebar a:hover {
+  background: #e8f5e9;
+}
+.close-btn {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: none;
+    border: none;
+  padding: 2px;
+  font-size: 2rem;
+  color: #4caf50;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Overlay for sidebar */
+.sidebar-overlay {
+  display: none;
+}
+.sidebar-overlay.open {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.15);
+  z-index: 1100;
+}
+
+/* Responsive: Hide nav-links, show menu-btn on small screens */
+@media (max-width: 700px) {
+  .nav-links {
+    display: none;
+  }
+  .menu-btn {
+    display: flex;
+  }
+}
