@@ -30,7 +30,7 @@ CLASS_NAMES = [
 ]
 
 # Load trained model
-model = load_model('model.h5')  # Ensure correct model path
+model = load_model('../models/model.h5')  # Ensure correct model path
 print(f"Model loaded. Input shape: {model.input_shape}")
 
 def preprocess_image(image_bytes):
@@ -73,7 +73,7 @@ def predict():
 
         print(f"Raw predictions shape: {predictions.shape}")
         print(f"Raw predictions: {predictions[0]}")
-        
+
         class_id = np.argmax(predictions[0])
         confidence = float(np.max(predictions[0]))
 

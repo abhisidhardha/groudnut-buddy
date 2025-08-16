@@ -9,8 +9,11 @@ import { generateUsername } from 'unique-username-generator';
 
 const app = express();
 connectDB();
+dotenv.config();
 app.use(cors());
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 
 const generateUniqueUsername = async () => {
   let isUnique = false;
@@ -31,11 +34,13 @@ const generateUniqueUsername = async () => {
 // Modified verify OTP endpoint
 
 
-const accountSid = '###################################';
-const authToken = '####################################';
-const verifySid = '####################################';
+const accountSid = process.env.TWILIO_ACCOUNT_SID;
+const authToken = process.env.TWILIO_AUTH_TOKEN;
+const verifySid = process.env.TWILIO_VERIFY_SID;
+
 const client = twilio(accountSid, authToken);
 
+// Send OTP
 // Send OTP
 app.post('/api/send-otp', async (req, res) => {
   const { phone } = req.body;
@@ -51,13 +56,6 @@ app.post('/api/send-otp', async (req, res) => {
 // Verify OTP
 // server.js (backend)
 app.post('/api/verify-otp', async (req, res) => {
-  if (process.env.NODE_ENV === 'development' && code === '111111') {
-    return res.json({
-      success: true,
-      username: 'devuser',
-      token: 'dev-mock-token',
-    });
-  }
   const { phone, code } = req.body; // <-- Ensure this matches client's request body
   console.log('Request body:', req.body);
   if (!phone || !code) {
